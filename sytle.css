@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+header a:hover {
+    color: #aaa;
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    background-color: #aaa;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #fff;
+}
+
+.hero p {
+    color: #fff;
+}
+
+.services {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.service {
+    background-color: #aaa;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service h2 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.service p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        height: 100px;
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 40px auto;
+    gap: 10px;
+    background-color: #eee;
+    padding: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+}
+
+.contact-form button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-form button:hover {
+    background-color: #666;
+}
+
+.contact-form button:active {
+    background-color: #999;
+}
+
+.error-message {
+    color: #f00;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
